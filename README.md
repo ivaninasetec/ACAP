@@ -1,13 +1,16 @@
 # Matlab model and dataset for the Alternative Arya and Paris model (ACAP) to predict the water retention curve of a soil.
-![Build Status](refx//status.svg)
+[![Generic badge](https://img.shields.io/badge/Build-passing-green.svg)](https://shields.io/)
+[![Version](https://img.shields.io/badge/Version-v.1.0.0-blue.svg)](https://shields.io/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 ACAP is a model to predict the water retention curve of a soil from its grain size distribution and its porosity. The model follows the formulation included in the paper 'Campos-Guereta, I. et al, 2020' with the same title as the heading, which is an evolution of the 'Arya and Paris, 1981' model.
 The model is very convenient as it uses only one parameter beta, that can be defined by a constant value (beta_fit=1.2041, for Dg0 option 1), or by more accurate values as constant values depending on soil classification (beta_fix_tex), constant beta with an empirical expression depending on characteristics of the GSD and porosity (beta_fix_emp) or more acurate empirical beta depending on the location of the water retention curve (i.e. beta_emp_dp(DP) or beta_emp_dg(Dg)).
 The code is in MATLAB rev. 2007b.
-This code is supplementary content for the paper 'Campos-Guereta, I. et al, 2020', it is free to use under MIT license but the original paper need to be referred.
+This code is supplementary content for the paper 'Campos-Guereta et al., 2021', it is free to use under MIT license but the original paper need to be referred.
+The paper is available at: [https://doi.org/10.1016/j.advwatres.2021.103968](https://doi.org/10.1016/j.advwatres.2021.103968)
 In the paper ACAP model is compared to previous models based on the original Aria and Paris, 1981 model that constitutes an evolution of the original model. Included into this code are therefore the followings models.
 Models to predict the WRC based on the Arya and Paris, 1981 model included in the repository (same MIT license):
-- ACAP model (Campos-Guereta, I. et al, 2020)
+- ACAP model (Campos-Guereta et al., 2021)
 - Arya and Paris, 1981 model
 - Arya and Paris, 1999 model
 - Arya and Paris, 2008 model
@@ -182,10 +185,10 @@ License<a name="license"></a>
 MIT
 Conditions:
 - The license copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-- Campos-Guereta et al, 2021 paper must be quoted whith the following data when refering to this code or when the code is applied: '*CAMPOS-GUERETA, I. et al 2020. An alternative continuous form of Arya and Paris model to predict the soil water retention curve of a soil. MATLAB model and empirical fits. Advances in Water Resources (submitted for publication)*'
+- Paper must be quoted whith the following data when refering to this code or when the code is applied: '*CAMPOS-GUERETA, I., DAWSON, A. & THOM, N. 2021. An alternative continuous form of Arya and Paris model to predict the soil water retention curve of a soil. Advances in Water Resources, 154, 103968*'
 
 # References
-- CAMPOS-GUERETA, I. et al 2021. An alternative continuous form of Arya and Paris model to predict the soil water retention curve of a soil. MATLAB model and empirical fits. Advances in Water Resources (submitted for publication)
+- CAMPOS-GUERETA, I., DAWSON, A. & THOM, N. 2021. An alternative continuous form of Arya and Paris model to predict the soil water retention curve of a soil. Advances in Water Resources, 154, 103968
 - ARYA, L. M. & PARIS, J. F. 1981. A Physicoempirical Model to Predict the Soil Moisture Characteristic from Particle-Size Distribution and Bulk Density Data. Soil Science Society of America Journal, 45, 1023-1030.
 - ARYA, L. M., LEIJ, F. J., VAN GENUCHTEN, M. T. & SHOUSE, P. J. 1999. Scaling Parameter to Predict the Soil Water Characteristic from Particle-Size Distribution Data. Soil Science Society of America Journal, 63, 510-519.
 - ARYA, L. M., BOWMAN, D. C., THAPA, B. B. & CASSEL, D. K. 2008. Scaling Soil Water Characteristics of Golf Course and Athletic Field Sands from Particle-Size Distribution. Soil Science Society of America Journal, 72, 25-32.
